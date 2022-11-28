@@ -34,8 +34,8 @@ const Order = (props) => {
 
   return (
     <div className={classes.Order}>
-      <p>By: {props.order.customer.name}</p>
-      <p>Address: {props.order.customer.address.street}</p>
+      <p>By: {props.order.orderData.name}</p>
+      <p>Address: {props.order.orderData.street}</p>
       <p>Ingredients: {ingredientsOutout}</p>
       <p>Price: <strong>USD {props.order.price.toFixed(2)}</strong></p>
     </div>
